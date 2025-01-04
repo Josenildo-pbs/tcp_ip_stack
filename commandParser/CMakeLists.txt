@@ -1,0 +1,5 @@
+set(LIB_NAME "commandParser")
+set(SRC_FILES clicbext.c clistd.c cmd_hier.c parser.c serialize.c string_util.c ut_parser.c)
+add_library(${LIB_NAME} STATIC ${SRC_FILES})
+target_link_libraries(${LIB_NAME} PUBLIC glthread)
+target_include_directories(${LIB_NAME} INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})

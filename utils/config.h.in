@@ -1,0 +1,4 @@
+#ifndef __CONFIG__
+#define __CONFIG__
+#define VERSION "@PROJECT_VERSION@"
+#endif
